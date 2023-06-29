@@ -1,0 +1,22 @@
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #d35400;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+/* Стили для секции с анекдотом */
+#jokeSection {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}

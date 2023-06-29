@@ -1,0 +1,156 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe5d4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили для заголовка сайта */
+.site-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin-bottom */
+}
+
+.site-title img {
+    width: 150px;
+    height: 110px;
+    margin: 0 auto;
+}
+
+.site-title h1 {
+    margin-left: 20px;
+    color: #e17055;
+    font-family: 'Arial', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 20px 0; /* Add margin */
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Стили для основного содержимого */
+main {
+    min-height: 100vh;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.section {
+    background-color: #fff1e6;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main_jokes {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h2{
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+/* Стили для подвала */
+footer {
+    background-color: #d35400;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Дополнительные стили для header и nav */
+header,
+nav a,
+.site-title h1,
+footer p {
+    color: #ffffff;
+}
+
+header {
+    background-color: #d35400;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 390px) {
+    .container {
+        padding: 10px;
+    }
+
+    .site-title h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .main_jokes {
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+#serious{
+    text-align: center;
+}
